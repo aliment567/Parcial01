@@ -6,6 +6,7 @@ El error está en la línea 11 del código, falta un paréntesis de cierre al fi
 
 Aquí está el código con el error:
 
+
 def invertir_lista(lista):
     
     for i in range(len(lista)//2):
@@ -17,6 +18,7 @@ def invertir_lista(lista):
         lista[len(lista)-i-1] = temp
     
     return lista
+
 
 print(invertir_lista([1,2,3,4,5])
 
