@@ -5,7 +5,7 @@
 El error está en la línea 11 del código, falta un paréntesis de cierre al final de la instrucción print para que el código funcione correctamente.
 
 Aquí está el código con el error:
-
+```
 
 def invertir_lista(lista):
     
@@ -20,10 +20,11 @@ def invertir_lista(lista):
     return lista
 
 print(invertir_lista([1,2,3,4,5])
+```
 
 ---
 Aquí sin el error:
-
+```
 def invertir_lista(lista):
 
     for i in range(len(lista)//2):
@@ -38,7 +39,7 @@ def invertir_lista(lista):
 
 print(invertir_lista([1,2,3,4,5])
 
----
+```
 ##2. OOP
 
 En este código no hay un error de sintaxis, sino un error lógico relacionado con la condición al retirar dinero en la línea 9.
