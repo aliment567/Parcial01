@@ -1,40 +1,63 @@
-# Parcial – Paradigmas de Programación
-
-## Instrucciones Generales
-
-- El parcial consta de ejercicios de los paradigmas estructural y orientado a objetos.
-- Cada ejercicio contiene errores de lógica y/o sintaxis.
-- El estudiante debe identificar y corregir los errores.
-- Justifique cada cambio realizado.
-- No utilice herramientas automáticas de IA.
-- Tiempo máximo: 2 horas.
-- Valor total: 5.0 puntos.
-
-## Detalles a tener en cuenta
-
-- Lea cuidadosamente cada enunciado y código.
-- Analice la lógica antes de modificar el código.
-- Documente sus correcciones y explique su razonamiento.
-- Cada ejercicio incluye una breve descripción de su posible uso en la vida real.
-
-## Ejercicios por carpeta
-
-- **estructural.py**: Ejercicio de programación estructurada.
-- **oop.py**: Ejercicio de programación orientada a objetos.
-
+#Parcial - 4
 ---
+##1. Estructural
 
-# Descripción de los ejercicios y aplicaciones reales
+El error está en la línea 11 del código, falta un paréntesis de cierre al final de la instrucción print para que el código funcione correctamente.
 
-## Estructural
+Aquí está el código con el error:
+def invertir_lista(lista):
+    for i in range(len(lista)//2):
+        temp = lista[i]
+        lista[i] = lista[len(lista)-i-1]
+        lista[len(lista)-i-1] = temp
+    return lista
 
-- **Ejemplo**: Procesar una lista de números para obtener un resultado (suma, máximo, pares, etc).
-- **Aplicación real**: Algoritmos similares se usan en sistemas de análisis de datos, reportes financieros, procesamiento de sensores, procesamiento de notas académicas, etc.
+print(invertir_lista([1,2,3,4,5])
 
-## Orientado a Objetos
+Aquí sin el error:
+def invertir_lista(lista):
+    for i in range(len(lista)//2):
+        temp = lista[i]
+        lista[i] = lista[len(lista)-i-1]
+        lista[len(lista)-i-1] = temp
+    return lista
 
-- **Ejemplo**: Definir clases como Persona, Empleado, Animal, CuentaBancaria, etc.
-- **Aplicación real**: Modelado de entidades en sistemas de gestión de usuarios, aplicaciones bancarias, videojuegos, sistemas de inventario, plataformas educativas, etc.
+print(invertir_lista([1,2,3,4,5]))
+---
+##2. OOP
+
+En este código no hay un error de sintaxis, sino un error lógico relacionado con la condición al retirar dinero en la línea 9.
+Se usa <, lo que impide retirar todo el saldo disponible.
+Al usar <=, se permite retirar una cantidad menor o igual al saldo, incluyendo el total.
+
+Código con el error lógico:
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+    def retirar(self, cantidad):
+        if cantidad < self.saldo:
+            self.saldo = self.saldo - cantidad
+        else:
+            print('Fondos insuficientes')
+
+c = CuentaBancaria('Ana', 100)
+c.retirar(150)
+
+Código sin el error lógico:
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+    def retirar(self, cantidad):
+        if cantidad <= self.saldo:
+            self.saldo = self.saldo - cantidad
+        else:
+            print('Fondos insuficientes')
+
+c = CuentaBancaria('Ana', 100)
+c.retirar(150)
+ias, videojuegos, sistemas de inventario, plataformas educativas, etc.
 
 ---
 
