@@ -5,6 +5,7 @@
 El error está en la línea 11 del código, falta un paréntesis de cierre al final de la instrucción print para que el código funcione correctamente.
 
 Aquí está el código con el error:
+
 def invertir_lista(lista):
     for i in range(len(lista)//2):
         temp = lista[i]
