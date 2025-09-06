@@ -43,6 +43,7 @@ print(invertir_lista([1,2,3,4,5])
 En este código no hay un error de sintaxis, sino un error lógico relacionado con la condición al retirar dinero en la línea 9.
 Se usa <, lo que impide retirar todo el saldo disponible.
 Al usar <=, se permite retirar una cantidad menor o igual al saldo, incluyendo el total.
+
 ---
 Código con el error lógico:
 
