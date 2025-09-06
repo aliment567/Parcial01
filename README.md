@@ -1,10 +1,10 @@
 #Parcial - 4
 ---
-##1. Estructural
+## 1. Estructural
 
 El error está en la línea 11 del código, falta un paréntesis de cierre al final de la instrucción print para que el código funcione correctamente.
 
-Aquí está el código con el error:
+### Aquí está el código con el error:
 ```
 
 def invertir_lista(lista):
@@ -23,7 +23,7 @@ print(invertir_lista([1,2,3,4,5])
 ```
 
 ---
-Aquí sin el error:
+### Aquí sin el error:
 ```
 def invertir_lista(lista):
 
@@ -40,14 +40,14 @@ def invertir_lista(lista):
 print(invertir_lista([1,2,3,4,5])
 
 ```
-##2. OOP
+## 2. OOP
 
 En este código no hay un error de sintaxis, sino un error lógico relacionado con la condición al retirar dinero en la línea 9.
 Se usa <, lo que impide retirar todo el saldo disponible.
 Al usar <=, se permite retirar una cantidad menor o igual al saldo, incluyendo el total.
 
----
-Código con el error lógico:
+
+### Código con el error lógico:
 
 class CuentaBancaria:
 
@@ -71,8 +71,8 @@ c = CuentaBancaria('Ana', 100)
 
 c.retirar(150)
 
----
-Código sin el error lógico:
+
+### Código sin el error lógico:
 
 
 class CuentaBancaria:
