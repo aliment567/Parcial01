@@ -19,7 +19,6 @@ def invertir_lista(lista):
     
     return lista
 
-
 print(invertir_lista([1,2,3,4,5])
 
 Aquí sin el error:
@@ -64,7 +63,6 @@ class CuentaBancaria:
         
             print('Fondos insuficientes')
 
-
 c = CuentaBancaria('Ana', 100)
 
 c.retirar(150)
@@ -90,7 +88,6 @@ class CuentaBancaria:
         else:
         
             print('Fondos insuficientes')
-
 
 c = CuentaBancaria('Ana', 100)
 
