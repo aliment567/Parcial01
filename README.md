@@ -21,6 +21,7 @@ def invertir_lista(lista):
 
 print(invertir_lista([1,2,3,4,5])
 
+---
 Aquí sin el error:
 
 def invertir_lista(lista):
