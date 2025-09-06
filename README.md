@@ -48,7 +48,7 @@ Al usar <=, se permite retirar una cantidad menor o igual al saldo, incluyendo e
 
 
 ### Código con el error lógico:
-
+```
 class CuentaBancaria:
 
     def __init__(self, titular, saldo):
@@ -71,10 +71,10 @@ c = CuentaBancaria('Ana', 100)
 
 c.retirar(150)
 
-
+```
 ### Código sin el error lógico:
 
-
+```
 class CuentaBancaria:
 
     def __init__(self, titular, saldo):
@@ -97,6 +97,5 @@ c = CuentaBancaria('Ana', 100)
 
 c.retirar(150)
 
-
----
+```
 
